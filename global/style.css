@@ -130,15 +130,26 @@ footer {
 }
 
 /* General */
+.split {
+    padding: 0;
+    display: flex;
+}
 .sidebar {
     width: 260px;
+    margin: 0;
     background-color: var(--secondary-bg-color);
+    text-align: left;
 }
 .sidebar a {
+    display: block;
     padding: 0 10px;
-    margin: 0 15px;
     margin-bottom: 10px;
+    line-height: 32px;
+    color: var(--heading-text-color);
     border-radius: 8px;
+}
+.sidebar a:hover {
+    text-decoration: none;
 }
 .sidebar a.selected {
     background-color: var(--bg-color);
