@@ -136,9 +136,6 @@ footer {
     padding: 0;
     display: flex;
 }
-.split section {
-    width: initial;
-}
 .sidebar-header {
     width: 260px;
 }
@@ -167,6 +164,9 @@ footer {
     height: 26px;
     image-rendering: pixelated;
     margin: 0 8px;
+}
+.grid {
+    width: initial;
 }
 .banner {
     height: 540px;
