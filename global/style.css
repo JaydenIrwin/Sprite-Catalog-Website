@@ -132,6 +132,7 @@ footer {
 
 /* General */
 .split {
+    min-height: calc(100vh - 154px);
     padding: 0;
     display: flex;
 }
