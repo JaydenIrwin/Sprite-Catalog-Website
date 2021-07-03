@@ -136,11 +136,14 @@ footer {
     padding: 0;
     display: flex;
 }
+.split section {
+    width: initial;
+}
 .sidebar-header {
     width: 260px;
 }
 .sidebar {
-    width: 260px;
+    width: 280px;
     margin: 0;
     background-color: var(--secondary-bg-color);
     text-align: left;
