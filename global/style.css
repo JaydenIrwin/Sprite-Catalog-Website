@@ -15,7 +15,7 @@
     --transparent-header-color: rgba(247, 247, 247, 0.85);
     --chapter-nav-bg-color: #fff8;
     --border-color: #b3b3b3;
-    --accent-color: #e6e;
+    --accent-color: #5eb5fa;
     --control-color: #f7f7f7;
     --control-text-color: #000;
     --border-radius: 16px;
@@ -124,6 +124,7 @@ header a:hover {
 header h2 {
     margin: 0;
     padding: 4px 10px;
+    line-height: 36px;
 }
 footer {
     font-size: 0.8em;
@@ -158,8 +159,8 @@ footer {
     background-color: var(--bg-color);
 }
 .sidebar a img {
-    width: 32px;
-    height: 32px;
+    width: 26px;
+    height: 26px;
     image-rendering: pixelated;
     margin: 0 8px;
 }
