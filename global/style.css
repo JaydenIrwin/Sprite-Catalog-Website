@@ -93,6 +93,7 @@ body section section, body header nav, body footer section {
 
 /* Header + Footer */
 body header {
+    display: flex;
     position: fixed;
     z-index: 99;
     width: 100%;
@@ -119,6 +120,10 @@ header a, footer section a {
 header a:hover {
     text-decoration: none;
     color: #b4b;
+}
+header h2 {
+    margin: 0;
+    padding: 10px;
 }
 footer {
     font-size: 0.8em;
