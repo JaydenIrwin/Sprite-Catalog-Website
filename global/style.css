@@ -130,6 +130,19 @@ footer {
 }
 
 /* General */
+.sidebar {
+    width: 260px;
+    background-color: var(--secondary-bg-color);
+}
+.sidebar a {
+    padding: 0 10px;
+    margin: 0 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.sidebar a.selected {
+    background-color: var(--bg-color);
+}
 .banner {
     height: 540px;
     padding: 0;
