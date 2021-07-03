@@ -136,11 +136,10 @@ footer {
     padding: 0;
     display: flex;
 }
-.sidebar-header {
-    width: 260px;
+.sidebar, .sidebar-header {
+    width: 280px;
 }
 .sidebar {
-    width: 280px;
     margin: 0;
     background-color: var(--secondary-bg-color);
     text-align: left;
