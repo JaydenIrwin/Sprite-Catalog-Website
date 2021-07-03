@@ -131,9 +131,6 @@ footer {
 }
 
 /* General */
-.beta-title {
-    font-weight: 400;
-}
 .split {
     min-height: calc(100vh - 154px);
     padding: 0;
