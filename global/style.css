@@ -144,7 +144,7 @@ footer {
     text-align: left;
 }
 .sidebar a {
-    display: block;
+    display: flex;
     padding: 0 10px;
     margin-bottom: 10px;
     line-height: 32px;
@@ -156,6 +156,12 @@ footer {
 }
 .sidebar a.selected {
     background-color: var(--bg-color);
+}
+.sidebar a img {
+    width: 32px;
+    height: 32px;
+    image-rendering: pixelated;
+    margin: 0 8px;
 }
 .banner {
     height: 540px;
