@@ -100,11 +100,6 @@ body header {
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
 }
-body header nav {
-    display: flex !important;
-    justify-content: space-between;
-    padding: 0 12px;
-}
 .header-space {
     height: 44px;
     padding: 0;
@@ -116,12 +111,12 @@ body header nav {
         padding-right: max(12px, env(safe-area-inset-right));
     }
 }
-nav a, footer section a {
+header a, footer section a {
     line-height: 36px;
     margin: 4px;
     white-space: nowrap;
 }
-nav a:hover {
+header a:hover {
     text-decoration: none;
     color: #b4b;
 }
@@ -175,11 +170,11 @@ h1 {
     margin: 12px auto;
 }
 h2 {
-    font-size: 1.66em;
+    font-size: 24px;
     margin: 8px auto;
 }
 h3 {
-    font-size: 1.33em;
+    font-size: 20px;
     margin: 4px auto;
 }
 p {
@@ -295,24 +290,3 @@ pre code {
 }
 
 /* Page-Specific */
-form.contact-form {
-    width: 512px;
-    padding: 12px;
-    margin: auto;
-    border-radius: var(--border-radius);
-    text-align: left;
-}
-.contact-form div.g-recaptcha {
-    margin: 4px;
-}
-.message-bubble {
-    display: inline-block;
-    max-width: 85%;
-    margin: auto;
-    padding: 8px;
-    text-align: right;
-    background-color: var(--accent-color);
-    color: var(--inverted-text-color);
-    border: none;
-    border-radius: 14px 14px 0 14px;
-}
