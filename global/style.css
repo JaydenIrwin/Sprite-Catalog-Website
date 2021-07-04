@@ -160,7 +160,7 @@ footer {
 }
 .sidebar a img {
     width: 26px;
-    height: auto;
+    height: 26px;
     image-rendering: pixelated;
     margin: 0 8px;
 }
@@ -168,7 +168,7 @@ footer {
     width: initial;
 }
 .modal-dark-overlay {
-    display: flex;
+    display: none; /* flex; */
     position: fixed;
     top: 0;
     bottom: 0;
@@ -193,6 +193,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.title-bar h3 {
+    margin: 0;
 }
 .banner {
     height: 540px;
