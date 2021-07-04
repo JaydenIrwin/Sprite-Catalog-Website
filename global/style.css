@@ -156,7 +156,8 @@ footer {
     text-decoration: none;
 }
 .sidebar a.selected {
-    background-color: var(--bg-color);
+    color: #fff;
+    background-color: var(--accent-color);
 }
 .sidebar a img {
     width: 26px;
