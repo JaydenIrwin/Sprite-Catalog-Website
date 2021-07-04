@@ -175,13 +175,12 @@ footer {
     left: 0;
     right: 0;
     z-index: 99;
-    background-color: #0007;
+    background-color: #0006;
     align-items: center;
     justify-content: center;
 }
 .sheet {
     padding: 16px;
-    width: 400px;
     background-color: var(--bg-color);
     border-radius: var(--border-radius);
 }
@@ -193,6 +192,7 @@ footer {
 .title-bar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .banner {
     height: 540px;
