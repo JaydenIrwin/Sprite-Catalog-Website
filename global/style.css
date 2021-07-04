@@ -167,13 +167,18 @@ footer {
 .grid {
     width: initial;
 }
-.sprite-modal {
+.modal-dark-overlay {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 99;
+    background-color: #0007;
+}
+.sheet {
+    width: 500px;
+    height: 600px;
     background-color: var(--bg-color);
     border-radius: var(--border-radius);
 }
