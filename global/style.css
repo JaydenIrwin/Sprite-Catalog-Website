@@ -176,21 +176,23 @@ footer {
     right: 0;
     z-index: 99;
     background-color: #0007;
+    align-items: center;
+    justify-content: center;
 }
 .sheet {
     padding: 16px;
-    width: 500px;
-    height: 600px;
+    width: 400px;
     background-color: var(--bg-color);
     border-radius: var(--border-radius);
 }
 .sheet img {
-    width: 400px;
+    width: 320px;
     height: auto;
     image-rendering: pixelated;
 }
 .title-bar {
     display: flex;
+    align-items: center;
 }
 .banner {
     height: 540px;
