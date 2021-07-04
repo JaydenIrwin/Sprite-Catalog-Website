@@ -167,6 +167,16 @@ footer {
 .grid {
     width: initial;
 }
+.sprite-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius);
+}
 .banner {
     height: 540px;
     padding: 0;
