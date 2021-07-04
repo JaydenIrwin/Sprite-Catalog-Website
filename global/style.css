@@ -160,7 +160,7 @@ footer {
 }
 .sidebar a img {
     width: 26px;
-    height: 26px;
+    height: auto;
     image-rendering: pixelated;
     margin: 0 8px;
 }
@@ -168,6 +168,7 @@ footer {
     width: initial;
 }
 .modal-dark-overlay {
+    display: flex;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -177,10 +178,19 @@ footer {
     background-color: #0007;
 }
 .sheet {
+    padding: 16px;
     width: 500px;
     height: 600px;
     background-color: var(--bg-color);
     border-radius: var(--border-radius);
+}
+.sheet img {
+    width: 400px;
+    height: auto;
+    image-rendering: pixelated;
+}
+.title-bar {
+    display: flex;
 }
 .banner {
     height: 540px;
