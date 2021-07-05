@@ -233,7 +233,11 @@ footer {
     margin: 0;
 }
 .title-bar div {
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+.title-bar a {
+    margin-left: 8px;
 }
 .banner {
     height: 540px;
