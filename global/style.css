@@ -94,12 +94,17 @@ body section section, body header nav, body footer section {
 /* Header + Footer */
 body header {
     display: flex;
-    position: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 99;
     width: 100%;
     background-color: var(--transparent-header-color);
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
+    align-items: center;
+    justify-content: space-between;
 }
 .header-space {
     height: 44px;
@@ -111,12 +116,6 @@ body header {
         padding-left: max(12px, env(safe-area-inset-left));
         padding-right: max(12px, env(safe-area-inset-right));
     }
-}
-header div {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
 }
 header a, footer section a {
     line-height: 36px;
@@ -290,12 +289,10 @@ pre code {
     padding: 0;
     display: flex;
 }
-.sidebar, .sidebar-header {
+.sidebar {
     width: 280px;
     flex-shrink: 0;
     border-right: 1px solid var(--border-color);
-}
-.sidebar {
     margin: 0;
     background-color: var(--secondary-bg-color);
     text-align: left;
