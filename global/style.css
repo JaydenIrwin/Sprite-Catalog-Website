@@ -146,7 +146,6 @@ footer {
 }
 .sidebar a {
     display: flex;
-    padding: 0 10px;
     margin-bottom: 10px;
     line-height: 32px;
     color: var(--heading-text-color);
