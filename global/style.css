@@ -138,6 +138,7 @@ footer {
 }
 .sidebar, .sidebar-header {
     width: 280px;
+    flex-shrink: 0;
 }
 .sidebar {
     margin: 0;
@@ -172,6 +173,7 @@ footer {
 }
 .grid a {
     display: inline-block;
+    margin: 2px;
     min-width: 52px;
     background-color: var(--grouped-secondary-bg-color);
     border-radius: 12px;
