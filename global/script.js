@@ -17,11 +17,12 @@ function addLoadEvent(func) {
 addLoadEvent(start);
 
 function showSprite(name, id, artistName, licence) {
-	$("#modal-dark-overlay").attr("display", "flex");
+	$("#modal-dark-overlay").css("display", "flex");
 	$("#sprite-name").textContent = name;
 	$("#sprite-preview").attr("src", "/sprite/" + id + ".png");
 	$("#artist-link").textContent = artistName;
 	$("#licence-link").textContent = licence;
+	$("#download").attr("href", "/sprite/" + id + ".png");
 }
 
 function closeSprite() {
