@@ -282,7 +282,7 @@ pre code {
 
 /* Page-Specific */
 .split {
-    min-height: calc(100vh - 154px);
+    min-height: calc(100vh - 44px);
     padding: 0;
     display: flex;
 }
@@ -327,6 +327,9 @@ pre code {
     width: 100%;
     background-color: var(--grouped-bg-color);
     text-align: left;
+}
+.grid div {
+    margin: 12px;
 }
 .grid a {
     display: inline-block;

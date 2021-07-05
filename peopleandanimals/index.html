@@ -14,20 +14,13 @@
         <meta name="apple-itunes-app" content="app-id=1560692872">
     </head>
     <body ontouchstart>
-        <header>
-            <div class="sidebar-header">
-                <a href="https://www.jaydenirwin.com/spritecatalog/">
-                    <h2>Sprite Catalog</h2>
-                </a>
-            </div>
-            <div>
-                <h2>People & Animals</h2>
-                <h3>Web Beta</h3>
-            </div>
-        </header>
-        <section class="header-space"></section>
         <section class="split">
             <section class="sidebar">
+                <header>
+                    <a href="https://www.jaydenirwin.com/spritecatalog/">
+                        <h2>Sprite Catalog</h2>
+                    </a>
+                </header>
                 <a href="/peopleandanimals/" class="selected">
                     <img src="/global/animals.png">
                     People & Animals
@@ -79,6 +72,11 @@
                 </a>
             </section>
             <section class="grid">
+                <header>
+                    <h2>People & Animals</h2>
+                    <h3>Web Beta</h3>
+                </header>
+                <div>
                 <a title="Onesie Person (CC BY)" onclick="showSprite('Onesie Person', 'sel3cc', 'SciGho', 'CC BY')">
     <img src="/sprite/sel3cc.png" loading="lazy" alt="Onesie Person">
 </a>
@@ -259,6 +257,7 @@
 <a title="Bug (CC BY)" onclick="showSprite('Bug', 'urvk09', 'SciGho', 'CC BY')">
     <img src="/sprite/urvk09.png" loading="lazy" alt="Bug">
 </a>
+                </div>
             </section>
         </section>
         <div id="modal-dark-overlay" class="modal-dark-overlay">
