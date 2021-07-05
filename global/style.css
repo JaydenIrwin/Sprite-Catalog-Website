@@ -109,7 +109,7 @@ body header {
 .header-space {
     height: 44px;
     padding: 0;
-    background-color: var(--secondary-bg-color);
+    background-color: transparent;
 }
 @supports(padding: max(0px)) {
     body header nav, body section section {
@@ -290,6 +290,7 @@ pre code {
     display: flex;
 }
 .sidebar {
+    position: relative;
     width: 280px;
     flex-shrink: 0;
     border-right: 1px solid var(--border-color);
@@ -322,6 +323,7 @@ pre code {
     color: var(--secondary-text-color);
 }
 .grid {
+    position: relative;
     margin: initial;
     width: 100%;
     background-color: var(--grouped-bg-color);
