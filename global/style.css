@@ -35,7 +35,7 @@
         --chapter-nav-bg-color: #24242688;
         --control-color: #fff2;
         --control-text-color: #fff;
-	    --border-color: #b3b3b3;
+	    --border-color: #5d5d5d;
 	}
 }
 :root[data-theme="dark"], .dark-theme {
@@ -52,7 +52,7 @@
     --chapter-nav-bg-color: #24242688;
     --control-color: #fff2;
     --control-text-color: #fff;
-    --border-color: #b3b3b3;
+    --border-color: #5d5d5d;
 }
 
 /* General */
@@ -293,12 +293,12 @@ pre code {
 .sidebar, .sidebar-header {
     width: 280px;
     flex-shrink: 0;
+    border-right: 1px solid var(--border-color);
 }
 .sidebar {
     margin: 0;
     background-color: var(--secondary-bg-color);
     text-align: left;
-    border-right: 1px solid var(--border-color);
 }
 .sidebar a {
     display: flex;
