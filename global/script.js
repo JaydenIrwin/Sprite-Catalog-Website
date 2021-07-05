@@ -17,7 +17,7 @@ function addLoadEvent(func) {
 addLoadEvent(start);
 
 function showSprite() {
-	$("#modal-dark-overlay").show();
+	$("#modal-dark-overlay").attr("display", "flex");
 }
 
 function closeSprite() {

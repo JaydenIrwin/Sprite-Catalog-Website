@@ -112,6 +112,10 @@ body header {
         padding-right: max(12px, env(safe-area-inset-right));
     }
 }
+header div {
+    display: flex;
+    justify-content: space-between;
+}
 header a, footer section a {
     line-height: 36px;
     margin: 4px;
@@ -121,10 +125,14 @@ header a:hover {
     text-decoration: none;
     color: #b4b;
 }
-header h2 {
+header h2, header h3 {
+    display: inline-block;
     margin: 0;
     padding: 4px 10px;
     line-height: 36px;
+}
+header h3 {
+    font-weight: 500;
 }
 footer {
     font-size: 0.8em;
@@ -174,7 +182,8 @@ footer {
 .grid a {
     display: inline-block;
     margin: 2px;
-    min-width: 58px;
+    width: 66px;
+    height: 66px;
     background-color: var(--grouped-secondary-bg-color);
     border-radius: 12px;
 }
@@ -198,6 +207,7 @@ footer {
     justify-content: center;
 }
 .sheet {
+    display: inline-block;
     padding: 16px;
     background-color: var(--bg-color);
     border-radius: var(--border-radius);
