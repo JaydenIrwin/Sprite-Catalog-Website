@@ -179,7 +179,7 @@ footer {
     border-radius: 12px;
 }
 .grid a img {
-    padding: 4px;
+    margin: 8px;
     width: auto;
     height: 50px;
     max-width: 50px;

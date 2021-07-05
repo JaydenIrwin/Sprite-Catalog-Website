@@ -22,6 +22,7 @@
             </div>
             <div>
                 <h2></h2>
+                <h3>Web Beta</h3>
             </div>
         </header>
         <section class="header-space"></section>
@@ -71,17 +72,23 @@
                     <img src="/global/interface.png">
                     Interface
                 </a>
+                <h4>Library</h4>
+                <a title="Not Available on Web" class="disabled">
+                    <img src="/global/folder.png">
+                    My Collection
+                </a>
             </section>
             <section class="grid">
-                <a>Content</a>
-                <a>Download Sprite Catalog For More</a>
+                <a>Sprite Catalog - Access the full catalog</a>
             </section>
         </section>
         <div id="modal-dark-overlay" class="modal-dark-overlay">
             <div class="sheet">
                 <div class="title-bar">
                     <h3 id="sprite-title">Sprite Title</h3>
-                    <a>Close</a>
+                    <a class="disabled">+</a>
+                    <a class="disabled">O</a>
+                    <a onclick="closeSprite()">Close</a>
                 </div>
                 <img id="sprite-preview" src="/global/animals.png">
                 <p>Artist: <a id="artist-link">Artist Name</a></p>
@@ -92,9 +99,12 @@
         <footer>
             <section class="content">
                 <p class="secondary">Copyright &#169; Jayden Irwin. All rights reserved.</p>
+                <a href="https://www.jaydenirwin.com/spritecatalog/">Website</a>
                 <a href="https://www.jaydenirwin.com/contact/">Contact</a>
                 <a href="http://twitter.com/jaydenirwin/" target="_blank">Twitter</a>
             </section>
         </footer>
+        <script async src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script async src="/global/script.js"></script>
     </body>
 </html>
