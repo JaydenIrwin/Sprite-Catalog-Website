@@ -174,15 +174,15 @@ footer {
 .grid a {
     display: inline-block;
     margin: 2px;
-    min-width: 52px;
+    min-width: 58px;
     background-color: var(--grouped-secondary-bg-color);
     border-radius: 12px;
 }
 .grid a img {
     padding: 4px;
     width: auto;
-    height: 44px;
-    max-width: 44px;
+    height: 50px;
+    max-width: 50px;
     image-rendering: pixelated;
 }
 .modal-dark-overlay {
