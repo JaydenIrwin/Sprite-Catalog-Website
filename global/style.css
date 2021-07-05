@@ -197,9 +197,6 @@ a.selected {
     opacity: 0.5;
     filter: grayscale(50%);
 }
-.disabled:hover {
-    color: inherit;
-}
 button, .button {
     color: var(--accent-color);
     background-color: var(--control-color);
@@ -301,6 +298,7 @@ pre code {
     margin: 0;
     background-color: var(--secondary-bg-color);
     text-align: left;
+    border-right: 1px solid var(--border-color);
 }
 .sidebar a {
     display: flex;
@@ -364,6 +362,7 @@ pre code {
     padding: 16px;
     background-color: var(--bg-color);
     border-radius: var(--border-radius);
+    box-shadow: 0 0 24px #0008;
 }
 .sheet>img {
     width: 320px;
@@ -374,6 +373,14 @@ pre code {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.title-bar h2, .title-bar h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 .title-bar h3 {
     margin: 0;

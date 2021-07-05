@@ -18,11 +18,13 @@ addLoadEvent(start);
 
 function showSprite(name, id, artistName, licence) {
 	$("#modal-dark-overlay").css("display", "flex");
-	$("#sprite-name").textContent = name;
+	$("#sprite-name").textContent = "" + name;
 	$("#sprite-preview").attr("src", "/sprite/" + id + ".png");
-	$("#artist-link").textContent = artistName;
-	$("#licence-link").textContent = licence;
-	$("#download").attr("href", "/sprite/" + id + ".png");
+	$("#artist-link").textContent = "" + artistName;
+	$("#licence-link").textContent = "" + licence;
+	let downloadButton = $("#download");
+	downloadButton.attr("download", "" + name);
+	downloadButton.attr("href", "/sprite/" + id + ".png");
 }
 
 function closeSprite() {
