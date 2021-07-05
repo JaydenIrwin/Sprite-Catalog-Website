@@ -115,6 +115,7 @@ body header {
 header div {
     display: flex;
     width: 100%;
+    align-items: center;
     justify-content: space-between;
 }
 header a, footer section a {
@@ -168,9 +169,6 @@ footer {
 .sidebar a.selected {
     color: #fff;
     background-color: var(--accent-color);
-}
-.sidebar a.disabled {
-    opacity: 0.5;
 }
 .sidebar a img {
     width: 26px;
@@ -285,6 +283,9 @@ a:hover, a:hover h1, a:hover h2, a:hover h3 {
 a.selected {
     color: var(--text-color) !important;
 }
+.disabled {
+    opacity: 0.5;
+}
 button, .button {
     color: var(--accent-color);
     background-color: var(--control-color);
@@ -309,6 +310,7 @@ button, .button {
     text-align: center;
 }
 .button.disabled {
+    opacity: 1;
     color: #aaa;
     background-image: none;
     cursor: not-allowed;
