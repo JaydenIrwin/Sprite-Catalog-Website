@@ -298,7 +298,7 @@ button, .button {
     background-color: var(--control-color);
     font-size: 1em;
     line-height: 32px;
-    padding: 0 8px;
+    padding: 0 12px;
     display: inline-block;
     border-radius: var(--border-radius);
     border: none;
