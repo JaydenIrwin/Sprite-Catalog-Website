@@ -219,7 +219,7 @@ footer {
     background-color: var(--bg-color);
     border-radius: var(--border-radius);
 }
-.sheet img {
+.sheet>img {
     width: 320px;
     height: auto;
     image-rendering: pixelated;
@@ -231,6 +231,9 @@ footer {
 }
 .title-bar h3 {
     margin: 0;
+}
+.title-bar div {
+    vertical-align: middle;
 }
 .banner {
     height: 540px;
