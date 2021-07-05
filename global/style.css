@@ -166,6 +166,18 @@ footer {
 }
 .grid {
     width: initial;
+    background-color: var(--grouped-bg-color);
+}
+.grid a {
+    display: inline-block;
+    background-color: var(--grouped-secondary-bg-color);
+    border-radius: var(--border-radius);
+}
+.grid a img {
+    width: auto;
+    height: 32px;
+    max-width: 32px;
+    image-rendering: pixelated;
 }
 .modal-dark-overlay {
     display: none; /* flex; */
