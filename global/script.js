@@ -1,24 +1,6 @@
-function start() {
-	//
-}
-function addLoadEvent(func) {
-	var oldonload = window.onload;
-	if (typeof window.onload != 'function') {
-		window.onload = func;
-	} else {
-		window.onload = function() {
-			if (oldonload) {
-				oldonload();
-			}
-			func();
-		}
-	}
-}
-addLoadEvent(start);
-
-function showSprite(name, id, artistName, licence) {
+function showSprite(title, id, artistName, licence) {
 	$("#modal-dark-overlay").css("display", "flex");
-	$("#sprite-name").text(name);
+	$("#sprite-title").text(title);
 	$("#sprite-preview").attr("src", "/sprite/" + id + ".png");
 
 	let artistLink = $("#artist-link");
@@ -30,7 +12,7 @@ function showSprite(name, id, artistName, licence) {
 	licenceLink.attr("href", "");
 
 	let downloadButton = $("#download");
-	downloadButton.attr("download", name);
+	downloadButton.attr("download", title);
 	downloadButton.attr("href", "/sprite/" + id + ".png");
 }
 
