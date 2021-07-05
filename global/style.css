@@ -94,12 +94,9 @@ body section section, body header nav, body footer section {
 /* Header + Footer */
 body header {
     display: flex;
-    position: absolute;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 99;
-    width: 100%;
     background-color: var(--transparent-header-color);
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -290,7 +287,7 @@ pre code {
     display: flex;
 }
 .sidebar {
-    position: relative;
+    padding: 0;
     width: 280px;
     flex-shrink: 0;
     border-right: 1px solid var(--border-color);
@@ -300,6 +297,7 @@ pre code {
 }
 .sidebar a {
     display: flex;
+    margin: 0 12px;
     margin-bottom: 10px;
     line-height: 32px;
     color: var(--heading-text-color);
@@ -319,12 +317,13 @@ pre code {
     margin: 0 8px;
 }
 .sidebar h4 {
+    margin: 0 12px;
     margin-bottom: 5px;
     color: var(--secondary-text-color);
 }
 .grid {
-    position: relative;
     margin: initial;
+    padding: 0;
     width: 100%;
     background-color: var(--grouped-bg-color);
     text-align: left;
