@@ -129,6 +129,14 @@ header h2, header h3 {
     padding: 4px 10px;
     line-height: 36px;
 }
+header h2, header h3, .title-bar h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
 header h3 {
     font-weight: 500;
     color: var(--secondary-text-color);
@@ -282,7 +290,7 @@ pre code {
 
 /* Page-Specific */
 .split {
-    min-height: calc(100vh - 44px);
+    min-height: 100vh;
     padding: 0;
     display: flex;
 }
@@ -374,14 +382,6 @@ pre code {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.title-bar h2, .title-bar h3 {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
 }
 .title-bar h3 {
     margin: 0;
