@@ -9,29 +9,23 @@
         <meta name="theme-color" content="#fff">
         <meta name="og:image" content="/global/opengraph.png">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="keywords" content="game, developer, iphone, ipad, mac, iOS, iPadOS, macOS, sprite, pixel, art, pencil, app">
-        <meta name="description" content="Collection of many downloadable pixel art assets.">
+        <meta name="keywords" content="Food, game, developer, iphone, ipad, mac, iOS, iPadOS, macOS, sprite, pixel, art, pencil, app">
+        <meta name="description" content="Collection of many Food downloadable pixel art assets.">
         <meta name="apple-itunes-app" content="app-id=1560692872">
     </head>
     <body ontouchstart>
-        <header>
-            <div class="sidebar-header">
-                <a href="https://www.jaydenirwin.com/spritecatalog/">
-                    <h2>Sprite Catalog</h2>
-                </a>
-            </div>
-            <div>
-                <h2>Food</h2>
-            </div>
-        </header>
-        <section class="header-space"></section>
         <section class="split">
             <section class="sidebar">
+                <header>
+                    <a href="/">
+                        <h2>Sprite Catalog</h2>
+                    </a>
+                </header>
                 <a href="/peopleandanimals/">
                     <img src="/global/animals.png">
                     People & Animals
                 </a>
-                <a href="/food/" class="selected">
+                <a href="/food/">
                     <img src="/global/food.png">
                     Food
                 </a>
@@ -71,17 +65,52 @@
                     <img src="/global/interface.png">
                     Interface
                 </a>
+                <h4>Library</h4>
+                <a title="Not Available on Web" class="disabled">
+                    <img src="/global/folder.png">
+                    My Collection
+                </a>
             </section>
             <section class="grid">
-                <a>Content</a>
+                <header>
+                    <h2>Food</h2>
+                    <h3>Web Beta</h3>
+                </header>
+                <div>
+                    
+                    <a>Sprite Catalog - Access the full catalog</a>
+                </div>
             </section>
         </section>
+        <div id="modal-dark-overlay" class="modal-dark-overlay">
+            <div class="sheet">
+                <div class="title-bar">
+                    <h3 id="sprite-title">Sprite Title</h3>
+                    <div>
+                        <a title="Not Available on Web" class="disabled">
+                            <img srcset="/global/plus_icon_3x.png 3x">
+                        </a>
+                        <a title="Not Available on Web" class="disabled">
+                            <img srcset="/global/recolor_icon_3x.png 3x">
+                        </a>
+                        <a onclick="closeSprite()">Close</a>
+                    </div>
+                </div>
+                <img id="sprite-preview" src="/global/animals.png">
+                <p>Artist: <a id="artist-link">Artist Name</a></p>
+                <p>Licence: <a id="licence-link">Licence</a></p>
+                <a download="Sprite" id="download" class="button">Download</a>
+            </div>
+        </div>
         <footer>
             <section class="content">
                 <p class="secondary">Copyright &#169; Jayden Irwin. All rights reserved.</p>
+                <a href="https://www.jaydenirwin.com/spritecatalog/">Website</a>
                 <a href="https://www.jaydenirwin.com/contact/">Contact</a>
                 <a href="http://twitter.com/jaydenirwin/" target="_blank">Twitter</a>
             </section>
         </footer>
+        <script async src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script async src="/global/script.js"></script>
     </body>
 </html>
