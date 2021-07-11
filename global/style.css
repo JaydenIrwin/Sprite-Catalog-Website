@@ -117,7 +117,6 @@ body header {
 }
 header a, footer section a {
     line-height: 36px;
-    margin: 4px;
     white-space: nowrap;
 }
 header a:hover {
@@ -144,6 +143,9 @@ header h3 {
 }
 footer {
     font-size: 0.8em;
+}
+footer section a {
+    margin: 4px;
 }
 
 /* General */
@@ -305,7 +307,15 @@ pre code {
     background-color: var(--secondary-bg-color);
     text-align: left;
 }
-.sidebar a {
+@media (max-width: 500px) {
+    header h3 {
+        display: none;
+    }
+    .sidebar {
+        width: 220px;
+    }
+}
+.sidebar>a {
     display: flex;
     margin: 0 12px;
     margin-bottom: 10px;
@@ -313,14 +323,14 @@ pre code {
     color: var(--heading-text-color);
     border-radius: 8px;
 }
-.sidebar a:hover {
+.sidebar>a:hover {
     text-decoration: none;
 }
-.sidebar a.selected {
+.sidebar>a.selected {
     color: #fff;
     background-color: var(--accent-color);
 }
-.sidebar a img {
+.sidebar>a img {
     width: 26px;
     height: 26px;
     image-rendering: pixelated;
@@ -358,8 +368,9 @@ pre code {
     max-width: 50px;
     image-rendering: pixelated;
 }
-.grid a.app-promo {
-    margin: 16px;
+.grid a.app-promo img {
+    margin: 0;
+    padding: 16px;
 }
 .modal-dark-overlay {
     display: none; /* flex; */
