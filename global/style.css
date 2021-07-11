@@ -100,6 +100,7 @@ body header {
     background-color: var(--transparent-header-color);
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 0.5px solid var(--border-color);
     align-items: center;
     justify-content: space-between;
 }
@@ -299,7 +300,7 @@ pre code {
     padding-left: env(safe-area-inset-left);
     width: 280px;
     flex-shrink: 0;
-    border-right: 1px solid var(--border-color);
+    border-right: 0.5px solid var(--border-color);
     margin: 0;
     background-color: var(--secondary-bg-color);
     text-align: left;
@@ -336,25 +337,29 @@ pre code {
     padding-right: env(safe-area-inset-right);
     width: 100%;
     background-color: var(--grouped-bg-color);
-    text-align: left;
 }
 .grid div {
     margin: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
 }
-.grid a {
-    display: inline-block;
-    margin: 2px;
+.grid div a {
+    margin: 4px;
     width: 66px;
     height: 66px;
     background-color: var(--grouped-secondary-bg-color);
     border-radius: 12px;
 }
-.grid a img {
+.grid div a img {
     margin: 8px;
     width: auto;
     height: 50px;
     max-width: 50px;
     image-rendering: pixelated;
+}
+.grid a.app-promo {
+    margin: 16px;
 }
 .modal-dark-overlay {
     display: none; /* flex; */
