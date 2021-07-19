@@ -341,6 +341,10 @@ pre code {
     margin-bottom: -5px;
     color: var(--secondary-text-color);
 }
+.sidebar .footer {
+    position: sticky;
+    bottom: 0;
+}
 .grid {
     margin: initial;
     padding: 0;
