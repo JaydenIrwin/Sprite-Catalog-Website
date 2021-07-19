@@ -333,6 +333,15 @@ pre code {
     color: #fff;
     background-color: var(--accent-color);
 }
+.sidebar>a.donate {
+    line-height: initial;
+    background-color: #1aff001a;
+    border-radius: 8px;
+}
+.sidebar>a.donate .button {
+    color: #1aff00;
+    background-color: #1aff0033;
+}
 .sidebar>a img {
     width: 26px;
     height: 26px;
