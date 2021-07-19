@@ -382,6 +382,8 @@ pre code {
 .grid.artwork div a {
     width: 132px;
     height: 132px;
+    padding: 0;
+    clip-path: content-box;
 }
 .grid div a img {
     margin: 0;
