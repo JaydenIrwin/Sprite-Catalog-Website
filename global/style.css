@@ -336,7 +336,7 @@ pre code {
 .sidebar>a.donate {
     line-height: initial;
     background-color: #1aff001a;
-    border-radius: 8px;
+    padding: 8px;
 }
 .sidebar>a.donate .button {
     color: #1aff00;
