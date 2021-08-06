@@ -14,15 +14,15 @@ function showSprite(title, id, artistName, licence) {
 		licenceLink.attr("href", "https://creativecommons.org/publicdomain/zero/1.0/");
 		break;
 		case "CC BY":
-		licenceLink.text("Free with Attribution");
+		licenceLink.text("Attribution");
 		licenceLink.attr("href", "https://creativecommons.org/licenses/by/4.0");
 		break;
 		case "CC BY-SA":
-		licenceLink.text("Free with Attribution-Share Alike");
+		licenceLink.text("Attribution-Share Alike");
 		licenceLink.attr("href", "https://creativecommons.org/licenses/by-sa/4.0");
 		break;
 		case "CC BY-NC":
-		licenceLink.text("Free for Personal Use");
+		licenceLink.text("Attribution-Non Commercial");
 		licenceLink.attr("href", "https://creativecommons.org/licenses/by-nc/4.0/");
 		break;
 		default:

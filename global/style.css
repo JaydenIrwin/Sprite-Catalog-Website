@@ -122,13 +122,16 @@ header a, footer section a {
 }
 header a:hover {
     text-decoration: none;
-    color: #5eb5fabb;
+    color: #5eb5faaa;
 }
 header h2, header h3 {
     display: inline-block;
     margin: 0;
     padding: 4px 8px;
     line-height: 36px;
+}
+header h2 a {
+    margin-right: 8px;
 }
 header h3, .title-bar h3 {
     overflow: hidden;
@@ -210,10 +213,11 @@ button, .button {
     color: var(--accent-color);
     background-color: var(--control-color);
     font-size: 1em;
-    line-height: 32px;
+    line-height: 44px;
+    text-align: center;
     padding: 0 12px;
     display: inline-block;
-    border-radius: var(--border-radius);
+    border-radius: 8px;
     border: none;
 }
 .button:hover {
@@ -221,13 +225,10 @@ button, .button {
     background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
 }
 .button.filled {
-    color: var(--bg-color);
+    color: #fff;
     background-color: var(--accent-color);
-    text-transform: uppercase;
     font-weight: bold;
-    line-height: 24px;
     min-width: 64px;
-    text-align: center;
 }
 .button.disabled {
     opacity: 1;
@@ -430,8 +431,10 @@ pre code {
     box-shadow: 0 0 24px #0008;
 }
 .sheet>img {
-    width: 320px;
-    height: auto;
+    min-width: 320px;
+    width: calc(100% - 8px);
+    height: 320px;
+    object-fit: contain;
     image-rendering: pixelated;
 }
 .title-bar {
@@ -448,6 +451,13 @@ pre code {
 }
 .title-bar a {
     margin-left: 8px;
+}
+#download {
+    width: 100%;
+    margin: 0;
+}
+#share, #open-sp {
+    display: none;
 }
 
 /* Desktop VS Mobile */
