@@ -311,11 +311,19 @@ pre code {
     text-align: left;
 }
 @media (max-width: 500px) {
-    header h3 {
+    .desktop-only {
+        display: none;
+    }
+    /*header h3 {
         display: none;
     }
     .sidebar {
         width: 220px;
+    }*/
+}
+@media (min-width: 501px) {
+    .mobile-only {
+        display: none;
     }
 }
 .sidebar>a {
@@ -330,17 +338,26 @@ pre code {
     text-decoration: none;
 }
 .sidebar>a.selected {
-    color: #fff;
+    color: #fff !important;
     background-color: var(--accent-color);
 }
 .sidebar>a.donate {
     line-height: initial;
-    background-color: #1aff001a;
+    background-color: #1aff0033;
     padding: 8px;
 }
 .sidebar>a.donate .button {
     color: #1aff00;
-    background-color: #1aff0033;
+    background-color: var(--control-color);
+}
+@media (prefers-color-scheme: dark) {
+    .sidebar>a.donate {
+        background-color: #1aff001a;
+    }
+    .sidebar>a.donate .button {
+        color: #1aff00;
+        background-color: #1aff0033;
+    }
 }
 .sidebar>a img {
     width: 26px;
