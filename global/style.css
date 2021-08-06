@@ -85,7 +85,7 @@ body section section, body header nav, body footer section {
 	margin: auto;
     text-align: center;
 }
-@media (max-width: 490px) /* Compact Width */ {
+@media (max-width: 500px) /* Compact Width */ {
     body * section {
         text-align: left;
     }
@@ -311,22 +311,6 @@ pre code {
     background-color: var(--secondary-bg-color);
     text-align: left;
 }
-@media (max-width: 500px) {
-    .desktop-only {
-        display: none;
-    }
-    /*header h3 {
-        display: none;
-    }
-    .sidebar {
-        width: 220px;
-    }*/
-}
-@media (min-width: 501px) {
-    .mobile-only {
-        display: none;
-    }
-}
 .sidebar>a {
     display: flex;
     margin: 10px 12px;
@@ -344,11 +328,11 @@ pre code {
 }
 .sidebar>a.donate {
     line-height: initial;
-    background-color: #1aff0033;
+    background-color: #14C00022;
     padding: 8px;
 }
 .sidebar>a.donate .button {
-    color: #1aff00;
+    color: #14C000;
     background-color: var(--control-color);
 }
 @media (prefers-color-scheme: dark) {
@@ -464,4 +448,20 @@ pre code {
 }
 .title-bar a {
     margin-left: 8px;
+}
+
+/* Desktop VS Mobile */
+
+@media (max-width: 500px) {
+    .desktop-only {
+        display: none;
+    }
+    .sidebar {
+        border-right: none;
+    }
+}
+@media (min-width: 501px) {
+    .mobile-only {
+        display: none;
+    }
 }
