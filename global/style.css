@@ -457,6 +457,7 @@ pre code {
         display: none;
     }
     .sidebar {
+        width: 100%;
         border-right: none;
     }
 }
