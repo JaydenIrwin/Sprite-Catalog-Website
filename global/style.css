@@ -93,6 +93,7 @@ body section section, body header nav, body footer section {
 
 /* Header + Footer */
 body header {
+    padding: 0 8px;
     display: flex;
     position: sticky;
     top: 0;
@@ -121,15 +122,15 @@ header a, footer section a {
 }
 header a:hover {
     text-decoration: none;
-    color: #b4b;
+    color: #5eb5fabb;
 }
 header h2, header h3 {
     display: inline-block;
     margin: 0;
-    padding: 4px 10px;
+    padding: 4px 8px;
     line-height: 36px;
 }
-header h2, header h3, .title-bar h3 {
+header h3, .title-bar h3 {
     overflow: hidden;
     text-overflow: ellipsis;
     word-wrap: break-word;
