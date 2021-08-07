@@ -10,7 +10,7 @@
         <meta name="og:image" content="/global/opengraph.png">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="keywords" content="Artwork, game, developer, iphone, ipad, mac, iOS, iPadOS, macOS, sprite, pixel, art, pencil, app">
-        <meta name="description" content="Collection of many Artwork downloadable pixel art assets.">
+        <meta name="description" content="Collections of Artwork downloadable (many free) pixel art assets.">
         <meta name="apple-itunes-app" content="app-id=1560692872">
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RBM60EGQDR"></script>
@@ -23,7 +23,7 @@
     </head>
     <body ontouchstart>
         <section class="split">
-            <section class="sidebar">
+            <section class="sidebar desktop-only">
                 <header>
                     <a href="/">
                         <h2>Sprite Catalog</h2>
@@ -90,9 +90,12 @@
                     <a href="https://form.jotform.com/211994359527266" target="_blank">Submit Your Sprites</a>
                 </div>
             </section>
-            <section class="grid artwork">
+            <section class="grid">
                 <header>
-                    <h2>Artwork</h2>
+                    <h2>
+                        <a href="/" class="mobile-only">&#9776;</a>
+                        Artwork
+                    </h2>
                     <h3>Web Beta</h3>
                 </header>
                 <div>
@@ -201,6 +204,27 @@
 <a title="City (CC0)" onclick="showSprite('City', 'zfqsjq', 'Megacrash', 'CC0')">
     <img src="/sprite/zfqsjq.png" loading="lazy" alt="City">
 </a>
+<a title="Graveyard (CC BY)" onclick="showSprite('Graveyard', '1axzto', 'RodrixAP', 'CC BY')">
+    <img src="/sprite/1axzto.png" loading="lazy" alt="Graveyard">
+</a>
+<a title="Waterfall Forest (CC BY)" onclick="showSprite('Waterfall Forest', '21f6i4', 'RodrixAP', 'CC BY')">
+    <img src="/sprite/21f6i4.png" loading="lazy" alt="Waterfall Forest">
+</a>
+<a title="River Forest (CC BY)" onclick="showSprite('River Forest', 'dee61c', 'RodrixAP', 'CC BY')">
+    <img src="/sprite/dee61c.png" loading="lazy" alt="River Forest">
+</a>
+<a title="Bamboo Pathway (CC BY)" onclick="showSprite('Bamboo Pathway', 'erk9u7', 'RodrixAP', 'CC BY')">
+    <img src="/sprite/erk9u7.png" loading="lazy" alt="Bamboo Pathway">
+</a>
+<a title="Night City (CC BY)" onclick="showSprite('Night City', 'exdn5u', 'RodrixAP', 'CC BY')">
+    <img src="/sprite/exdn5u.png" loading="lazy" alt="Night City">
+</a>
+<a title="Farmland (CC BY)" onclick="showSprite('Farmland', 'j1shqy', 'RodrixAP', 'CC BY')">
+    <img src="/sprite/j1shqy.png" loading="lazy" alt="Farmland">
+</a>
+<a title="Seaside Gate (CC BY)" onclick="showSprite('Seaside Gate', 'k6pxwk', 'RodrixAP', 'CC BY')">
+    <img src="/sprite/k6pxwk.png" loading="lazy" alt="Seaside Gate">
+</a>
 
                 </div>
                 <a class="app-promo" href="https://apps.apple.com/app/sprite-catalog/id1560692872" target="_blank">
@@ -226,9 +250,13 @@
                     </div>
                 </div>
                 <img id="sprite-preview" src="/global/animals.png">
-                <p>Artist: <a id="artist-link">Artist Name</a></p>
-                <p>Licence: <a id="licence-link">Licence</a></p>
-                <a download="Sprite" id="download" class="button">Download</a>
+                <p>Artist: <a id="artist-link" target="_blank">Artist Name</a></p>
+                <p>Licence: <a id="licence-link" target="_blank">Licence</a></p>
+                <div>
+                    <a download="Sprite" id="download" class="button filled">Download</a>
+                    <a id="open-sp" class="button">Edit in Sprite Pencil</a>
+                    <a id="share" class="button">Share</a>
+                </div>
             </div>
         </div>
         <footer>

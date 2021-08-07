@@ -10,7 +10,7 @@
         <meta name="og:image" content="/global/opengraph.png">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="keywords" content="Interface, game, developer, iphone, ipad, mac, iOS, iPadOS, macOS, sprite, pixel, art, pencil, app">
-        <meta name="description" content="Collection of many Interface downloadable pixel art assets.">
+        <meta name="description" content="Collections of Interface downloadable (many free) pixel art assets.">
         <meta name="apple-itunes-app" content="app-id=1560692872">
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RBM60EGQDR"></script>
@@ -23,7 +23,7 @@
     </head>
     <body ontouchstart>
         <section class="split">
-            <section class="sidebar">
+            <section class="sidebar desktop-only">
                 <header>
                     <a href="/">
                         <h2>Sprite Catalog</h2>
@@ -92,7 +92,10 @@
             </section>
             <section class="grid">
                 <header>
-                    <h2>Interface</h2>
+                    <h2>
+                        <a href="/" class="mobile-only">&#9776;</a>
+                        Interface
+                    </h2>
                     <h3>Web Beta</h3>
                 </header>
                 <div>
@@ -589,9 +592,13 @@
                     </div>
                 </div>
                 <img id="sprite-preview" src="/global/animals.png">
-                <p>Artist: <a id="artist-link">Artist Name</a></p>
-                <p>Licence: <a id="licence-link">Licence</a></p>
-                <a download="Sprite" id="download" class="button">Download</a>
+                <p>Artist: <a id="artist-link" target="_blank">Artist Name</a></p>
+                <p>Licence: <a id="licence-link" target="_blank">Licence</a></p>
+                <div>
+                    <a download="Sprite" id="download" class="button filled">Download</a>
+                    <a id="open-sp" class="button">Edit in Sprite Pencil</a>
+                    <a id="share" class="button">Share</a>
+                </div>
             </div>
         </div>
         <footer>

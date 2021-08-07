@@ -426,6 +426,7 @@ pre code {
 .sheet {
     display: inline-block;
     padding: 16px;
+    margin: 16px;
     background-color: var(--bg-color);
     border-radius: var(--border-radius);
     box-shadow: 0 0 24px #0008;

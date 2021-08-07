@@ -10,7 +10,7 @@
         <meta name="og:image" content="/global/opengraph.png">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="keywords" content="Misc. Items, game, developer, iphone, ipad, mac, iOS, iPadOS, macOS, sprite, pixel, art, pencil, app">
-        <meta name="description" content="Collection of many Misc. Items downloadable pixel art assets.">
+        <meta name="description" content="Collections of Misc. Items downloadable (many free) pixel art assets.">
         <meta name="apple-itunes-app" content="app-id=1560692872">
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RBM60EGQDR"></script>
@@ -23,7 +23,7 @@
     </head>
     <body ontouchstart>
         <section class="split">
-            <section class="sidebar">
+            <section class="sidebar desktop-only">
                 <header>
                     <a href="/">
                         <h2>Sprite Catalog</h2>
@@ -92,11 +92,17 @@
             </section>
             <section class="grid">
                 <header>
-                    <h2>Misc. Items</h2>
+                    <h2>
+                        <a href="/" class="mobile-only">&#9776;</a>
+                        Misc. Items
+                    </h2>
                     <h3>Web Beta</h3>
                 </header>
                 <div>
-                    <a title="Wood Plank (CC BY)" onclick="showSprite('Wood Plank', 'j1pub8', 'Kyrise', 'CC BY')">
+                    <a title="Heart Lolipop (CC BY)" onclick="showSprite('Heart Lolipop', 'prj2s4', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/prj2s4.png" loading="lazy" alt="Heart Lolipop">
+</a>
+<a title="Wood Plank (CC BY)" onclick="showSprite('Wood Plank', 'j1pub8', 'Kyrise', 'CC BY')">
     <img src="/sprite/j1pub8.png" loading="lazy" alt="Wood Plank">
 </a>
 <a title="Stone Brick (CC BY)" onclick="showSprite('Stone Brick', 'qu0h7k', 'Kyrise', 'CC BY')">
@@ -870,6 +876,39 @@
 <a title="Rare Resource (CC BY)" onclick="showSprite('Rare Resource', '388kpy', 'AngryMeteor.com', 'CC BY')">
     <img src="/sprite/388kpy.png" loading="lazy" alt="Rare Resource">
 </a>
+<a title="Teady Bear (CC BY)" onclick="showSprite('Teady Bear', '0yvqu8', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/0yvqu8.png" loading="lazy" alt="Teady Bear">
+</a>
+<a title="Ring (CC BY)" onclick="showSprite('Ring', '3jlt4r', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/3jlt4r.png" loading="lazy" alt="Ring">
+</a>
+<a title="Candy Bucket (CC BY)" onclick="showSprite('Candy Bucket', '9j6wc2', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/9j6wc2.png" loading="lazy" alt="Candy Bucket">
+</a>
+<a title="Cauldron (CC BY)" onclick="showSprite('Cauldron', 'blwzvs', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/blwzvs.png" loading="lazy" alt="Cauldron">
+</a>
+<a title="Ring (CC BY)" onclick="showSprite('Ring', 'c7y0m0', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/c7y0m0.png" loading="lazy" alt="Ring">
+</a>
+<a title="Flowers (CC BY)" onclick="showSprite('Flowers', 'ck9rbu', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/ck9rbu.png" loading="lazy" alt="Flowers">
+</a>
+<a title="Flower (CC BY)" onclick="showSprite('Flower', 'lz3pg3', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/lz3pg3.png" loading="lazy" alt="Flower">
+</a>
+<a title="Candles 2 (CC BY)" onclick="showSprite('Candles 2', 'n9c7pd', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/n9c7pd.png" loading="lazy" alt="Candles 2">
+</a>
+<a title="Spider Web (CC BY)" onclick="showSprite('Spider Web', 'ye6y3c', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/ye6y3c.png" loading="lazy" alt="Spider Web">
+</a>
+<a title="Ring Box (CC BY)" onclick="showSprite('Ring Box', 'zda2dz', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/zda2dz.png" loading="lazy" alt="Ring Box">
+</a>
+<a title="Pumpkin (CC BY)" onclick="showSprite('Pumpkin', 'zvajed', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/zvajed.png" loading="lazy" alt="Pumpkin">
+</a>
 <a title="Powerbar (European) (CC0)" onclick="showSprite('Powerbar (European)', '0sll70', 'Ghostpixxells', 'CC0')">
     <img src="/sprite/0sll70.png" loading="lazy" alt="Powerbar (European)">
 </a>
@@ -1183,16 +1222,20 @@
                     </div>
                 </div>
                 <img id="sprite-preview" src="/global/animals.png">
-                <p>Artist: <a id="artist-link">Artist Name</a></p>
-                <p>Licence: <a id="licence-link">Licence</a></p>
-                <a download="Sprite" id="download" class="button">Download</a>
+                <p>Artist: <a id="artist-link" target="_blank">Artist Name</a></p>
+                <p>Licence: <a id="licence-link" target="_blank">Licence</a></p>
+                <div>
+                    <a download="Sprite" id="download" class="button filled">Download</a>
+                    <a id="open-sp" class="button">Edit in Sprite Pencil</a>
+                    <a id="share" class="button">Share</a>
+                </div>
             </div>
         </div>
         <footer>
             <section class="content">
                 <p class="secondary">Copyright &#169; Jayden Irwin. All rights reserved.</p>
                 <a href="https://www.jaydenirwin.com/spritecatalog/">Website</a>
-                <a href="https://www.jaydenirwin.com/api/">API</a>
+                <a href="/api/">API</a>
                 <a href="https://www.jaydenirwin.com/contact/">Contact</a>
             </section>
         </footer>

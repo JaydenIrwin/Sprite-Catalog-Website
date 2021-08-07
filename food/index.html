@@ -10,7 +10,7 @@
         <meta name="og:image" content="/global/opengraph.png">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="keywords" content="Food, game, developer, iphone, ipad, mac, iOS, iPadOS, macOS, sprite, pixel, art, pencil, app">
-        <meta name="description" content="Collection of many Food downloadable pixel art assets.">
+        <meta name="description" content="Collections of Food downloadable (many free) pixel art assets.">
         <meta name="apple-itunes-app" content="app-id=1560692872">
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RBM60EGQDR"></script>
@@ -23,7 +23,7 @@
     </head>
     <body ontouchstart>
         <section class="split">
-            <section class="sidebar">
+            <section class="sidebar desktop-only">
                 <header>
                     <a href="/">
                         <h2>Sprite Catalog</h2>
@@ -92,7 +92,10 @@
             </section>
             <section class="grid">
                 <header>
-                    <h2>Food</h2>
+                    <h2>
+                        <a href="/" class="mobile-only">&#9776;</a>
+                        Food
+                    </h2>
                     <h3>Web Beta</h3>
                 </header>
                 <div>
@@ -672,6 +675,24 @@
 <a title="Ice Cream (CC0)" onclick="showSprite('Ice Cream', '9yxrqm', 'Ghostpixxells', 'CC0')">
     <img src="/sprite/9yxrqm.png" loading="lazy" alt="Ice Cream">
 </a>
+<a title="Candy (CC BY)" onclick="showSprite('Candy', '3e1dpr', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/3e1dpr.png" loading="lazy" alt="Candy">
+</a>
+<a title="Candy Bar (CC BY)" onclick="showSprite('Candy Bar', '8zp5p2', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/8zp5p2.png" loading="lazy" alt="Candy Bar">
+</a>
+<a title="Lolipop (CC BY)" onclick="showSprite('Lolipop', 'bjsdw9', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/bjsdw9.png" loading="lazy" alt="Lolipop">
+</a>
+<a title="Candy Apple (CC BY)" onclick="showSprite('Candy Apple', 'cmnxlh', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/cmnxlh.png" loading="lazy" alt="Candy Apple">
+</a>
+<a title="Chocolate Candy Apple (CC BY)" onclick="showSprite('Chocolate Candy Apple', 'ft47q8', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/ft47q8.png" loading="lazy" alt="Chocolate Candy Apple">
+</a>
+<a title="Candy (CC BY)" onclick="showSprite('Candy', 'jzk054', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/jzk054.png" loading="lazy" alt="Candy">
+</a>
 <a title="Chocolate Bar (CC0)" onclick="showSprite('Chocolate Bar', 'rnm6m4', 'Ghostpixxells', 'CC0')">
     <img src="/sprite/rnm6m4.png" loading="lazy" alt="Chocolate Bar">
 </a>
@@ -1092,6 +1113,9 @@
 <a title="Bottle (CC BY)" onclick="showSprite('Bottle', 'gccfff', 'Gif', 'CC BY')">
     <img src="/sprite/gccfff.png" loading="lazy" alt="Bottle">
 </a>
+<a title="Chocolate Box (CC BY)" onclick="showSprite('Chocolate Box', 'cq1ad7', 'Caz Wolf', 'CC BY')">
+    <img src="/sprite/cq1ad7.png" loading="lazy" alt="Chocolate Box">
+</a>
 
                 </div>
                 <a class="app-promo" href="https://apps.apple.com/app/sprite-catalog/id1560692872" target="_blank">
@@ -1117,16 +1141,20 @@
                     </div>
                 </div>
                 <img id="sprite-preview" src="/global/animals.png">
-                <p>Artist: <a id="artist-link">Artist Name</a></p>
-                <p>Licence: <a id="licence-link">Licence</a></p>
-                <a download="Sprite" id="download" class="button">Download</a>
+                <p>Artist: <a id="artist-link" target="_blank">Artist Name</a></p>
+                <p>Licence: <a id="licence-link" target="_blank">Licence</a></p>
+                <div>
+                    <a download="Sprite" id="download" class="button filled">Download</a>
+                    <a id="open-sp" class="button">Edit in Sprite Pencil</a>
+                    <a id="share" class="button">Share</a>
+                </div>
             </div>
         </div>
         <footer>
             <section class="content">
                 <p class="secondary">Copyright &#169; Jayden Irwin. All rights reserved.</p>
                 <a href="https://www.jaydenirwin.com/spritecatalog/">Website</a>
-                <a href="https://www.jaydenirwin.com/api/">API</a>
+                <a href="/api/">API</a>
                 <a href="https://www.jaydenirwin.com/contact/">Contact</a>
             </section>
         </footer>
