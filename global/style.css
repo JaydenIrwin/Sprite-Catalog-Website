@@ -351,6 +351,11 @@ pre code {
     image-rendering: crisp-edges;
     margin: 0 8px;
 }
+@supports (image-rendering: pixelated) {
+    .sidebar>a img {
+        image-rendering: pixelated;
+    }
+}
 .sidebar h4 {
     margin: 12px;
     margin-bottom: -5px;
@@ -404,6 +409,11 @@ pre code {
     object-fit: contain;
     image-rendering: crisp-edges;
 }
+@supports (image-rendering: pixelated) {
+    .grid div a img {
+        image-rendering: pixelated;
+    }
+}
 .grid.artwork div a img {
     object-fit: cover;
 }
@@ -437,6 +447,11 @@ pre code {
     height: 320px;
     object-fit: contain;
     image-rendering: crisp-edges;
+}
+@supports (image-rendering: pixelated) {
+    .sheet>img {
+        image-rendering: pixelated;
+    }
 }
 .title-bar {
     display: flex;
