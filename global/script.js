@@ -1,5 +1,5 @@
 function showSprite(title, id, artistName, licence) {
-	$("#modal-dark-overlay").css("display", "flex");
+	$("#modal").showModal();
 	$("#sprite-title").text(title);
 	$("#sprite-preview").attr("src", "/sprite/" + id + ".png");
 
@@ -118,5 +118,5 @@ function urlForArtist(artistName) {
 }
 
 function closeSprite() {
-	$("#modal-dark-overlay").hide();
+	$("#modal").close();
 }

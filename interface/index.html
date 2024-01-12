@@ -77,20 +77,23 @@
                     <img src="/global/artwork.png">
                     Artwork
                 </a>
+                <a title="Not Available on Web" class="disabled">
+                    <picture>
+                        <source srcset="/global/fonts_dark.png" media="(prefers-color-scheme: dark)">
+                        <img src="/global/fonts.png">
+                    </picture>
+                    Fonts
+                </a>
                 <h4>Library</h4>
                 <a title="Not Available on Web" class="disabled">
                     <img src="/global/folder.png">
                     My Collection
                 </a>
-                <a class="donate" href="https://www.patreon.com/jaydenirwin/" target="_blank">
-                    Help keep this website running
-                    <div class="button">Support</div>
-                </a>
                 <div class="footer">
                     <a href="https://form.jotform.com/211994359527266" target="_blank">Submit Your Sprites</a>
                 </div>
             </section>
-            <section class="grid">
+            <section class="grid ">
                 <header>
                     <h2>
                         <a href="/" class="mobile-only">&#9776;</a>
@@ -99,7 +102,43 @@
                     <h3>Web Beta</h3>
                 </header>
                 <div>
-                    <a title="Arrow Down (CC0)" onclick="showSprite('Arrow Down', 'pmrerr', 'Pixel-Boy & AAA', 'CC0')">
+                    <a title="Eye  (CC BY)" onclick="showSprite('Eye ', '6c0n81', 'Matt Firth (cheekyinkling)', 'CC BY')">
+    <img src="/sprite/6c0n81.png" loading="lazy" alt="Eye ">
+</a>
+<a title="Arrows 2 (CC BY)" onclick="showSprite('Arrows 2', '8fq9fy', 'Matt Firth (cheekyinkling)', 'CC BY')">
+    <img src="/sprite/8fq9fy.png" loading="lazy" alt="Arrows 2">
+</a>
+<a title="Knife (CC BY)" onclick="showSprite('Knife', '12cguo', 'Matt Firth (cheekyinkling)', 'CC BY')">
+    <img src="/sprite/12cguo.png" loading="lazy" alt="Knife">
+</a>
+<a title="ZZZ (CC BY)" onclick="showSprite('ZZZ', '30ead3', 'Matt Firth (cheekyinkling)', 'CC BY')">
+    <img src="/sprite/30ead3.png" loading="lazy" alt="ZZZ">
+</a>
+<a title="Speech Bubble (CC BY)" onclick="showSprite('Speech Bubble', 'adcale', 'Matt Firth (cheekyinkling)', 'CC BY')">
+    <img src="/sprite/adcale.png" loading="lazy" alt="Speech Bubble">
+</a>
+<a title="Arrow Turn Down (CC BY)" onclick="showSprite('Arrow Turn Down', 'cldxxl', 'Matt Firth (cheekyinkling)', 'CC BY')">
+    <img src="/sprite/cldxxl.png" loading="lazy" alt="Arrow Turn Down">
+</a>
+<a title="Arrow Down Right (CC BY)" onclick="showSprite('Arrow Down Right', 'iubtfo', 'Matt Firth (cheekyinkling)', 'CC BY')">
+    <img src="/sprite/iubtfo.png" loading="lazy" alt="Arrow Down Right">
+</a>
+<a title="Arrow Up (CC BY)" onclick="showSprite('Arrow Up', 'ljnb9z', 'Matt Firth (cheekyinkling)', 'CC BY')">
+    <img src="/sprite/ljnb9z.png" loading="lazy" alt="Arrow Up">
+</a>
+<a title="Arrow Up Right (CC BY)" onclick="showSprite('Arrow Up Right', 'txhq19', 'Matt Firth (cheekyinkling)', 'CC BY')">
+    <img src="/sprite/txhq19.png" loading="lazy" alt="Arrow Up Right">
+</a>
+<a title="Arrow Down (CC BY)" onclick="showSprite('Arrow Down', 'x3ecco', 'Matt Firth (cheekyinkling)', 'CC BY')">
+    <img src="/sprite/x3ecco.png" loading="lazy" alt="Arrow Down">
+</a>
+<a title="Arrow Turn Up (CC BY)" onclick="showSprite('Arrow Turn Up', 'ye5pjp', 'Matt Firth (cheekyinkling)', 'CC BY')">
+    <img src="/sprite/ye5pjp.png" loading="lazy" alt="Arrow Turn Up">
+</a>
+<a title="Speech Bubbles 2 (CC BY)" onclick="showSprite('Speech Bubbles 2', 'yg9arb', 'Matt Firth (cheekyinkling)', 'CC BY')">
+    <img src="/sprite/yg9arb.png" loading="lazy" alt="Speech Bubbles 2">
+</a>
+<a title="Arrow Down (CC0)" onclick="showSprite('Arrow Down', 'pmrerr', 'Pixel-Boy & AAA', 'CC0')">
     <img src="/sprite/pmrerr.png" loading="lazy" alt="Arrow Down">
 </a>
 <a title="Arrow Up (CC0)" onclick="showSprite('Arrow Up', 'h0dvpj', 'Henry Software', 'CC0')">
@@ -577,36 +616,34 @@
                 </a>
             </section>
         </section>
-        <div id="modal-dark-overlay" class="modal-dark-overlay">
-            <div class="sheet">
-                <div class="title-bar">
-                    <h3 id="sprite-title">Sprite Title</h3>
-                    <div>
-                        <a title="Not Available on Web" class="disabled">
-                            <img srcset="/global/plus_icon_3x.png 3x">
-                        </a>
-                        <a title="Not Available on Web" class="disabled">
-                            <img srcset="/global/recolor_icon_3x.png 3x">
-                        </a>
-                        <a onclick="closeSprite()">Close</a>
-                    </div>
-                </div>
-                <img id="sprite-preview" src="/global/animals.png">
-                <p>Artist: <a id="artist-link" target="_blank">Artist Name</a></p>
-                <p>Licence: <a id="licence-link" target="_blank">Licence</a></p>
+        <dialog id="modal" class="sheet">
+            <div class="title-bar">
+                <h3 id="sprite-title">Sprite Title</h3>
                 <div>
-                    <a download="Sprite" id="download" class="button filled">Download</a>
-                    <a id="open-sp" class="button">Edit in Sprite Pencil</a>
-                    <a id="share" class="button">Share</a>
+                    <a title="Not Available on Web" class="disabled">
+                        <img srcset="/global/plus_icon_3x.png 3x">
+                    </a>
+                    <a title="Not Available on Web" class="disabled">
+                        <img srcset="/global/recolor_icon_3x.png 3x">
+                    </a>
+                    <a onclick="closeSprite()">Close</a>
                 </div>
             </div>
-        </div>
+            <img id="sprite-preview" src="/global/animals.png">
+            <p>Artist: <a id="artist-link" target="_blank">Artist Name</a></p>
+            <p>Licence: <a id="licence-link" target="_blank">Licence</a></p>
+            <div>
+                <a download="Sprite" id="download" class="button filled">Download</a>
+                <a id="open-sp" class="button">Edit in Sprite Pencil</a>
+                <a id="share" class="button">Share</a>
+            </div>
+        </dialog>
         <footer>
             <section class="content">
-                <p class="secondary">Copyright &#169; Jayden Irwin. All rights reserved.</p>
-                <a href="https://www.jaydenirwin.com/spritecatalog/">Website</a>
+                <p class="secondary">Copyright &#169; 256 Arts Inc. All rights reserved.</p>
+                <a href="https://www.256arts.com/spritecatalog/">Website</a>
                 <a href="/api/">API</a>
-                <a href="https://www.jaydenirwin.com/contact/">Contact</a>
+                <a href="https://www.256arts.com/contact/">Contact</a>
             </section>
         </footer>
         <script async src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
